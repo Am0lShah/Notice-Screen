@@ -15,7 +15,7 @@ function App() {
   const [name,setName]=useState('');
 
     const deviceSocket=()=>{
-        socket = io('http://localhost:8000', {
+        socket = io('https://kiosk-backend-14wu.onrender.com', {
         auth: {name:name,groupName:'xxxx' },
         transports: ['websocket', 'polling'], // Enable fallback
         reconnectionAttempts: 3,
